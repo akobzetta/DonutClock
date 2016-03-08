@@ -9,7 +9,7 @@ function drawClock()
 <div id="clockDiv">
 <?php
 date_default_timezone_set("Asia/Kuala_Lumpur");
-$hour = date("H");
+$hour = date("h");
 $minute = date("i");
 $second = date("s");
 	$Rsecond = 6.283185307179586476925286766559*30;
@@ -68,7 +68,7 @@ $second = date("s");
 <circle class="hour" r="70" cx="100" cy="100" />
 <circle class="minute" r="50" cx="100" cy="100" />
 <circle class="second" r="30" cx="100" cy="100" />
-<text x="10" y="200" stroke-width="20" fill="#FF5722" style="font-weight: bold;"><?php echo $texttime; ?></text>
+<text x="10" y="195" stroke-width="20" fill="#FF5722" style="font-weight: bold;"><?php echo $texttime; ?></text>
 </svg>
 </div>
 debug
@@ -83,7 +83,7 @@ function drawClock()
 <div id="thisdiv">
 <?php
 date_default_timezone_set("Asia/Kuala_Lumpur");
-$hour = date("H");
+$hour = date("h");
 $minute = date("i");
 $second = date("s");
 	$SecondR = 6.283185307179586476925286766559*30;
@@ -124,6 +124,6 @@ $texttime = date("d-m-Y h:i:s a");
 <circle class="secondz" r="70" cx="100" cy="100" />
 <circle class="over" r="50" cx="100" cy="100" />
 <circle class="sec" r="30" cx="100" cy="100" />
-<text x="0" y="200" stroke-width="20" fill="#FF5722" style="font-weight: bold;"><?php echo $texttime; ?></text>
+<text x="0" y="195" stroke-width="20" fill="#FF5722" style="font-weight: bold;"><?php echo $texttime; ?></text>
 </svg>
 </div>
